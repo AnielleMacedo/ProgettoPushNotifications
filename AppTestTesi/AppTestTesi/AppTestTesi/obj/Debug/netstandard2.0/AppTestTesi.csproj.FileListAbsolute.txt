@@ -1,0 +1,14 @@
+C:\Users\Anielle\source\repos\AppTestTesi\AppTestTesi\AppTestTesi\bin\Debug\netstandard2.0\AppTestTesi.deps.json
+C:\Users\Anielle\source\repos\AppTestTesi\AppTestTesi\AppTestTesi\bin\Debug\netstandard2.0\AppTestTesi.dll
+C:\Users\Anielle\source\repos\AppTestTesi\AppTestTesi\AppTestTesi\bin\Debug\netstandard2.0\ref\AppTestTesi.dll
+C:\Users\Anielle\source\repos\AppTestTesi\AppTestTesi\AppTestTesi\bin\Debug\netstandard2.0\AppTestTesi.pdb
+C:\Users\Anielle\source\repos\AppTestTesi\AppTestTesi\AppTestTesi\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Anielle\source\repos\AppTestTesi\AppTestTesi\AppTestTesi\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Anielle\source\repos\AppTestTesi\AppTestTesi\AppTestTesi\obj\Debug\netstandard2.0\AppTestTesi.AssemblyInfoInputs.cache
+C:\Users\Anielle\source\repos\AppTestTesi\AppTestTesi\AppTestTesi\obj\Debug\netstandard2.0\AppTestTesi.AssemblyInfo.cs
+C:\Users\Anielle\source\repos\AppTestTesi\AppTestTesi\AppTestTesi\obj\Debug\netstandard2.0\AppTestTesi.csproj.CoreCompileInputs.cache
+C:\Users\Anielle\source\repos\AppTestTesi\AppTestTesi\AppTestTesi\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Anielle\source\repos\AppTestTesi\AppTestTesi\AppTestTesi\obj\Debug\netstandard2.0\AppTestTesi.dll
+C:\Users\Anielle\source\repos\AppTestTesi\AppTestTesi\AppTestTesi\obj\Debug\netstandard2.0\ref\AppTestTesi.dll
+C:\Users\Anielle\source\repos\AppTestTesi\AppTestTesi\AppTestTesi\obj\Debug\netstandard2.0\AppTestTesi.pdb
+C:\Users\Anielle\source\repos\AppTestTesi\AppTestTesi\AppTestTesi\obj\Debug\netstandard2.0\AppTestTesi.csprojAssemblyReference.cache

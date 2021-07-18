@@ -1,0 +1,17 @@
+C:\Users\Anielle\source\repos\BIGPushDll\BIGPushDll\bin\Debug\BIGPushDll.dll
+C:\Users\Anielle\source\repos\BIGPushDll\BIGPushDll\bin\Debug\BIGPushDll.pdb
+C:\Users\Anielle\source\repos\BIGPushDll\BIGPushDll\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Anielle\source\repos\BIGPushDll\BIGPushDll\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Anielle\source\repos\Compiled\BIGPushDll.dll
+C:\Users\Anielle\source\repos\Compiled\BIGPushDll.pdb
+C:\Users\Anielle\source\repos\BIGPushDll\BIGPushDll\obj\Debug\BIGPushDll.csproj.CoreCompileInputs.cache
+C:\Users\Anielle\source\repos\BIGPushDll\BIGPushDll\obj\Debug\BIGPushDll.csproj.CopyComplete
+C:\Users\Anielle\source\repos\BIGPushDll\BIGPushDll\obj\Debug\BIGPushDll.dll
+C:\Users\Anielle\source\repos\BIGPushDll\BIGPushDll\obj\Debug\BIGPushDll.pdb
+C:\Users\Anielle\source\repos\LastBIG\Compiled\BIGPushDll.dll
+C:\Users\Anielle\source\repos\LastBIG\Compiled\BIGPushDll.pdb
+C:\Users\Anielle\source\repos\LastBIG\BIGPushDll\BIGPushDll\obj\Debug\BIGPushDll.csprojAssemblyReference.cache
+C:\Users\Anielle\source\repos\LastBIG\BIGPushDll\BIGPushDll\obj\Debug\BIGPushDll.csproj.CoreCompileInputs.cache
+C:\Users\Anielle\source\repos\LastBIG\BIGPushDll\BIGPushDll\obj\Debug\BIGPushDll.csproj.CopyComplete
+C:\Users\Anielle\source\repos\LastBIG\BIGPushDll\BIGPushDll\obj\Debug\BIGPushDll.dll
+C:\Users\Anielle\source\repos\LastBIG\BIGPushDll\BIGPushDll\obj\Debug\BIGPushDll.pdb

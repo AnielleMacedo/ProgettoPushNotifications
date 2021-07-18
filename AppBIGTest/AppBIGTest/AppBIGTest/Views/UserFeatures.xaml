@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBIGTest.Views.UserFeatures"
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfPicker.XForms;assembly=Syncfusion.SfPicker.XForms"
+             xmlns:viewModels="clr-namespace:AppBIGTest.ViewModel"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:syncfusion1="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms">
+
+<!--Data Binding: vinculazione della View Con le viewModels-->
+    <ContentPage.BindingContext>
+        <viewModels:MainViewModel />
+    </ContentPage.BindingContext>
+
+ 
+
+    <ContentPage.Content>
+        <StackLayout>
+
+            <!--main title -->
+            <Frame BackgroundColor="#2196F3" Padding="14" CornerRadius="0">
+                <Label Text="Push Notifications" HorizontalTextAlignment="Center" TextColor="White" FontSize="26" />
+            </Frame>
+            
+            <!--Grid for labels-->
+            <Grid Margin="20,10,20,5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                </Grid.RowDefinitions>
+
+                <!--Zero row-->
+                <Label Grid.Row="0" Text="Type a Message Push:" FontSize="20" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"></Label>
+
+
+                <!--first row Input Content-->
+                <StackLayout  Grid.Row="1"
+                BackgroundColor="WhiteSmoke"
+                VerticalOptions="Start"
+                HorizontalOptions="Start" 
+                Padding="5">
+                    <autocomplete:SfAutoComplete x:Name="inputContent"
+                                     HeightRequest="40" 
+                                     Watermark="Type or choose the options..."
+                                     WatermarkColor="Gray"
+                                     FontAttributes="Italic"
+                                     BindingContext="{Binding ContentViewModel}"
+                                     DataSource="{Binding ContentCollection}">
+                        <autocomplete:SfAutoComplete.ItemTemplate>
+                            <DataTemplate >
+                                <StackLayout Orientation="Horizontal" 
+                                 Padding="2,0,0,0">
+                                    <Image Source="bell.png" 
+                               WidthRequest="12"/>
+
+                                    <Label Text="{Binding Content}"  
+                               VerticalOptions="Center"/>
+                                </StackLayout>
+                            </DataTemplate>
+                        </autocomplete:SfAutoComplete.ItemTemplate>
+                    </autocomplete:SfAutoComplete>
+                </StackLayout>
+
+                <!--sec row-->
+                <Label Text="Select features:" Grid.Row="2"  FontAttributes="Bold" FontSize="18" Padding="0" HorizontalOptions="Start" VerticalOptions="Center"></Label>
+
+
+            </Grid>
+
+            <!--SCROLL WITH IMAGES-->
+            <ScrollView>
+                <StackLayout Orientation="Vertical" Margin="10,30,10,10" BackgroundColor="WhiteSmoke">
+
+                    
+                    <!--teste-->
+                    <!--<StackLayout BindingContext="{Binding UserViewModel}">
+                        <Entry Text="{Binding Nome}"></Entry>
+                        <Button  Text="clica" Command="{Binding InviaMsg}"></Button>
+                        <Label Text="{Binding Mensagem}"  x:Name="lblMensagem"></Label>
+                    </StackLayout>-->
+
+                    <!--language-->
+                    <Grid HeightRequest="200" x:Name="gridLanguage" BackgroundColor="WhiteSmoke">
+                        <BoxView BackgroundColor="LightGray"  />
+                        <Grid BackgroundColor="WhiteSmoke" Margin="1.5"/>
+                        <Label HorizontalOptions="CenterAndExpand" Text="Language"  FontSize="18"></Label>
+                        <ImageButton  
+                    x:Name="btnLanguage" 
+                    Source="language.png" 
+                    BindingContext="{Binding LanguageViewModel}"        
+                    Clicked="BtnLanguage_Clicked"
+                    HeightRequest="100" 
+                    WidthRequest="200" 
+                    BackgroundColor="WhiteSmoke"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" 
+                    />
+                        <syncfusion:SfPicker 
+                    x:Name="pickerLanguage"
+                    IsOpen="False"
+                    IsEnabled="False"
+                    HeaderHeight="40"
+                    BindingContext="{Binding LanguageViewModel}"
+                    ItemsSource="{Binding Language}"
+                    ShowHeader="true"
+                    HeaderText="Select Language"
+                    SelectionChanged="PickerLanguage_SelectionChanged"
+                    HeaderBackgroundColor="Gray"
+                    ColumnHeaderHeight="46"
+                    PickerMode="Dialog"
+                    PickerHeight="350"
+                    PickerWidth="350"
+                    ShowFooter="True" 
+                    FooterHeight="46"/>
+                        <Label Text="" x:Name="inputLanguage" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" FontAttributes="Bold" BackgroundColor="LightYellow"  Margin="12"></Label>
+                    
+                    
+                    
+                    </Grid>
+
+                    <!--User-->
+                    <Grid  HeightRequest="200" x:Name="gridUser" >
+                        <BoxView BackgroundColor="LightGray"  />
+                        <Grid BackgroundColor="WhiteSmoke" Margin="1.5"/>
+                        <Label x:Name="user" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" Text="User" FontSize="18" ></Label>
+
+                        <ImageButton  
+                    x:Name="btnUser" 
+                    Source="user.png" 
+                    Clicked="BtnUser_Clicked"
+                    HeightRequest="100" 
+                    WidthRequest="200" 
+                    BackgroundColor="WhiteSmoke"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+                        <syncfusion:SfPicker 
+                     x:Name="pickerUser"
+                    SelectionChanged="PickerUser_SelectionChanged"
+                    IsOpen="False"
+                    HeaderHeight="40"
+                    BindingContext="{Binding UserViewModel}"
+                    ItemsSource="{Binding User}"
+                     HeaderBackgroundColor="Gray"
+                    ShowHeader="true"
+                    HeaderText="Select user"
+                    ShowColumnHeader="True"
+                    ColumnHeaderHeight="46"
+                    PickerMode="Dialog"
+                    PickerHeight="350"
+                    PickerWidth="350"
+                    ShowFooter="True" 
+                    EnableLooping="True"
+                    FooterHeight="46"/>
+                        <Label x:Name="inputUser" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" FontAttributes="Bold" BackgroundColor="LightYellow" Text="" Margin="12"></Label>
+                    </Grid>
+
+                    <!--Heading-->
+                    <Grid HeightRequest="200" x:Name="gridHeading" >
+                        <BoxView BackgroundColor="LightGray"  />
+                        <Grid BackgroundColor="WhiteSmoke" Margin="1.5"/>
+                        <Label x:Name="heading" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" Text="Heading"  FontSize="18"></Label>
+
+                        <ImageButton  
+                    x:Name="btnHeading" 
+                    Source="doc1.png" 
+                    Clicked="BtnHeading_Clicked"
+                    HeightRequest="100" 
+                    WidthRequest="200" 
+                    BackgroundColor="WhiteSmoke"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+                        <syncfusion:SfPicker 
+                    x:Name="pickerHeading"
+                    SelectionChanged="PickerHeading_SelectionChanged"
+                    IsOpen="False"
+                    HeaderHeight="40"
+                    BindingContext="{Binding HeadingViewModel}"
+                    ItemsSource="{Binding Heading}"
+                    HeaderBackgroundColor="Gray"
+                    ShowHeader="true"
+                    HeaderText="Select heading"
+                    ShowColumnHeader="True"
+                    ColumnHeaderHeight="46"
+                    PickerMode="Dialog"
+                    PickerHeight="350"
+                    PickerWidth="350"
+                    ShowFooter="True" 
+                    EnableLooping="True"
+                    FooterHeight="46"/>
+
+                        <Label x:Name="inputHeading" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" FontAttributes="Bold"  BackgroundColor="LightYellow" Margin="12" Text=""></Label>
+
+                    </Grid>
+
+                    <!--HeadingColor-->
+                    <Grid HeightRequest="200" x:Name="gridHeadingColor">
+                        <BoxView BackgroundColor="LightGray"  />
+                        <Grid BackgroundColor="WhiteSmoke" Margin="1.5"/>
+                        <Label x:Name="headingColor" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" Text="Heading Color" FontSize="18"></Label>
+
+                        <ImageButton  
+                    x:Name="btnHeadingColor" 
+                    Source="style2.png" 
+                    Clicked="BtnHeadingColor_Clicked"
+                    HeightRequest="100" 
+                    WidthRequest="200" 
+                    BackgroundColor="WhiteSmoke"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+                        <syncfusion:SfPicker 
+                    x:Name="pickerHeadingColor"
+                    SelectionChanged="PickerHeadingColor_SelectionChanged"
+                    IsOpen="False"
+                    BackgroundColor="AntiqueWhite"
+                    HeaderHeight="40"
+                    BindingContext="{Binding ColorViewModel}"        
+                    ItemsSource="{Binding Colors}"
+                     HeaderBackgroundColor="Gray"
+                    ShowHeader="true"
+                    HeaderText="Select color"
+                    ColumnHeaderHeight="46"
+                    PickerMode="Dialog"
+                    PickerHeight="350"
+                    PickerWidth="350"
+                    ShowFooter="True" 
+                    FooterHeight="46"/>
+                        <Label x:Name="inputHeadColor" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" FontAttributes="Bold" BackgroundColor="LightYellow" Text="" Margin="12"></Label>
+
+                    </Grid>
+
+
+                    <!--Content color-->
+                    <Grid HeightRequest="200" x:Name="gridContentColor" >
+                        <BoxView BackgroundColor="LightGray"  />
+                        <Grid BackgroundColor="WhiteSmoke" Margin="1.5"/>
+                        <Label HorizontalOptions="CenterAndExpand" Text="Content Color"  FontSize="18"></Label>
+
+                        <ImageButton  
+                    x:Name="btnContentColor" 
+                    Source="style2.png" 
+                    Clicked="BtnContentColor_Clicked"  
+                    HeightRequest="100" 
+                    WidthRequest="200" 
+                            BackgroundColor="WhiteSmoke"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+                        <syncfusion:SfPicker 
+                    x:Name="pickerContentColor"
+                    SelectionChanged="PickerContentColor_SelectionChanged"  
+                    IsOpen="False"
+                    BackgroundColor="AntiqueWhite"
+                    HeaderHeight="40"
+                     HeaderBackgroundColor="Gray"
+                    BindingContext="{Binding ColorViewModel}"        
+                    ItemsSource="{Binding Colors}"
+                    ShowHeader="true"
+                    HeaderText="Select color"
+                    ColumnHeaderHeight="46"
+                    PickerMode="Dialog"
+                    PickerHeight="350"
+                    PickerWidth="350"
+                    ShowFooter="True" 
+                    FooterHeight="46"/>
+                        <Label x:Name="inputContColor" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" FontAttributes="Bold" BackgroundColor="LightYellow" Text="" Margin="12"></Label>
+                    </Grid>
+
+                    <!--image-->
+                    <Grid HeightRequest="200" x:Name="gridImage" BackgroundColor="WhiteSmoke" >
+                        <BoxView BackgroundColor="LightGray"  />
+                        <Grid BackgroundColor="WhiteSmoke" Margin="1.5"/>
+                        <Label x:Name="lblSwichtImg" HorizontalOptions="CenterAndExpand" Text="Image"  FontSize="18"></Label>
+                        <ImageButton  
+                    x:Name="btnImg" 
+                    Source="gallery.png" 
+                    HeightRequest="100" 
+                    WidthRequest="200" 
+                    BackgroundColor="WhiteSmoke"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+                        <Switch x:Name="switchSetImage" Toggled="SwitchSetImage_Toggled" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand" Margin="12"></Switch>
+                    </Grid>
+
+
+                    <!--Device Note: Per ora test dell'app solo per Android-->
+                    <Grid HeightRequest="200" x:Name="gridDevice" BackgroundColor="WhiteSmoke">
+                        <BoxView BackgroundColor="LightGray"  />
+                        <Grid BackgroundColor="WhiteSmoke" Margin="1.5"/>
+                        <Label HorizontalOptions="CenterAndExpand" Text="Device"  FontSize="18"></Label>
+                        <ImageButton  
+                    x:Name="btnDevice" 
+                    Source="device.png" 
+                    Clicked="BtnDevice_Clicked"
+                    BackgroundColor="WhiteSmoke"
+                    HeightRequest="100" 
+                    WidthRequest="200" 
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+                        <syncfusion:SfPicker 
+                    x:Name="pickerDevice"
+                    IsOpen="False"
+                    BackgroundColor="WhiteSmoke"
+                    HeaderHeight="40"
+                    BindingContext="{Binding DeviceViewModel}"
+                    ItemsSource="{Binding Device}"
+                    ShowHeader="true"
+                    HeaderText="Select Device"
+                    HeaderBackgroundColor="Gray"
+                    SelectionChanged="PickerDevice_SelectionChanged"
+                    ColumnHeaderHeight="46"
+                    PickerMode="Dialog"
+                    PickerHeight="350"
+                    PickerWidth="350"
+                    ShowFooter="True" 
+                    FooterHeight="46"/>
+                        <Label x:Name="inputDevice" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" FontAttributes="Bold" BackgroundColor="LightYellow" Text="" Margin="12"></Label>
+                    </Grid>
+
+                </StackLayout>
+            </ScrollView>
+
+            <!--Grid for buttons-->
+            <Grid Margin="10,30,10,10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="60"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Row="0" Grid.Column="0" x:Name="btClean" BackgroundColor="#2196F3" Text="Clean" FontSize="10" FontAttributes="Bold" TextColor="DarkSlateGray" Clicked="BtClean_Clicked" HorizontalOptions="Start"></Button>
+                <ImageButton Grid.Row="0" Grid.Column="1" x:Name="btnSend" Source="send.png" Clicked="BtnSend_Clicked" HorizontalOptions="End" BackgroundColor="white"></ImageButton>
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
+
+
+             
+
+   

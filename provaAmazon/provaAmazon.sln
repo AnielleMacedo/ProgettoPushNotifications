@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "provaAmazon.Android", "provaAmazon\provaAmazon.Android\provaAmazon.Android.csproj", "{16DB1DEE-F5D2-4A72-83FB-90D216272E01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "provaAmazon", "provaAmazon\provaAmazon\provaAmazon.csproj", "{1EE60D7B-864F-4CD2-B55A-E532890B2F18}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16DB1DEE-F5D2-4A72-83FB-90D216272E01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16DB1DEE-F5D2-4A72-83FB-90D216272E01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16DB1DEE-F5D2-4A72-83FB-90D216272E01}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{16DB1DEE-F5D2-4A72-83FB-90D216272E01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16DB1DEE-F5D2-4A72-83FB-90D216272E01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16DB1DEE-F5D2-4A72-83FB-90D216272E01}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{1EE60D7B-864F-4CD2-B55A-E532890B2F18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EE60D7B-864F-4CD2-B55A-E532890B2F18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EE60D7B-864F-4CD2-B55A-E532890B2F18}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1EE60D7B-864F-4CD2-B55A-E532890B2F18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EE60D7B-864F-4CD2-B55A-E532890B2F18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EE60D7B-864F-4CD2-B55A-E532890B2F18}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1E35077A-C532-45C5-8AAA-D2E66A4F5B62}
+	EndGlobalSection
+EndGlobal

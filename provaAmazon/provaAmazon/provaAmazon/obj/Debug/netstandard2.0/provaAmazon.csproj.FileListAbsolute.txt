@@ -1,0 +1,14 @@
+C:\Users\Anielle\source\repos\provaAmazon\provaAmazon\provaAmazon\bin\Debug\netstandard2.0\provaAmazon.deps.json
+C:\Users\Anielle\source\repos\provaAmazon\provaAmazon\provaAmazon\bin\Debug\netstandard2.0\provaAmazon.dll
+C:\Users\Anielle\source\repos\provaAmazon\provaAmazon\provaAmazon\bin\Debug\netstandard2.0\ref\provaAmazon.dll
+C:\Users\Anielle\source\repos\provaAmazon\provaAmazon\provaAmazon\bin\Debug\netstandard2.0\provaAmazon.pdb
+C:\Users\Anielle\source\repos\provaAmazon\provaAmazon\provaAmazon\obj\Debug\netstandard2.0\provaAmazon.csprojAssemblyReference.cache
+C:\Users\Anielle\source\repos\provaAmazon\provaAmazon\provaAmazon\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Anielle\source\repos\provaAmazon\provaAmazon\provaAmazon\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Anielle\source\repos\provaAmazon\provaAmazon\provaAmazon\obj\Debug\netstandard2.0\provaAmazon.AssemblyInfoInputs.cache
+C:\Users\Anielle\source\repos\provaAmazon\provaAmazon\provaAmazon\obj\Debug\netstandard2.0\provaAmazon.AssemblyInfo.cs
+C:\Users\Anielle\source\repos\provaAmazon\provaAmazon\provaAmazon\obj\Debug\netstandard2.0\provaAmazon.csproj.CoreCompileInputs.cache
+C:\Users\Anielle\source\repos\provaAmazon\provaAmazon\provaAmazon\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Anielle\source\repos\provaAmazon\provaAmazon\provaAmazon\obj\Debug\netstandard2.0\provaAmazon.dll
+C:\Users\Anielle\source\repos\provaAmazon\provaAmazon\provaAmazon\obj\Debug\netstandard2.0\ref\provaAmazon.dll
+C:\Users\Anielle\source\repos\provaAmazon\provaAmazon\provaAmazon\obj\Debug\netstandard2.0\provaAmazon.pdb
