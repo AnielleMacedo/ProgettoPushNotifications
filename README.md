@@ -32,7 +32,9 @@ Postman
 Per testare il  progetto registrare un dispositivo eseguendo l'applicazione su di esso inserendo le credenziali dell'account OneSignal.
 
 
-![()
+## Interfaccia Grafica - Push Notifications
+
+
 ![mobileP](https://user-images.githubusercontent.com/36572573/132749136-0db9de0f-e14d-47b3-adab-b8723b2a1e03.jpg)
-[![name](https://ibb.co/6BfPTRbL)]
+
   
