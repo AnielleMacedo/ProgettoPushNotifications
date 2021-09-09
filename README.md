@@ -32,5 +32,5 @@ Postman
 Per testare il  progetto registrare un dispositivo eseguendo l'applicazione su di esso inserendo le credenziali dell'account OneSignal.
 
 
-
+![alt text](http://url/to/img.png)
   
