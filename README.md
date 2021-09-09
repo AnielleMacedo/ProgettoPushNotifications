@@ -32,5 +32,7 @@ Postman
 Per testare il  progetto registrare un dispositivo eseguendo l'applicazione su di esso inserendo le credenziali dell'account OneSignal.
 
 
-![(https://ibb.co/6BfPTRb)
+![()
+
+[![name](https://ibb.co/6BfPTRbL)]
   
